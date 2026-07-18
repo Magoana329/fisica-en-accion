@@ -3,181 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Física en Acción</title>
+    <title>MRU - Física en Acción</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1a1a2e 50%, #16213e 100%);
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
             color: white;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
-
         .container {
-            max-width: 1000px;
-            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.05);
             padding: 40px;
-            background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        .logo {
-            font-size: 4rem;
-            margin-bottom: 10px;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .highlight {
-            color: #3b82f6;
-        }
-
-        .subtitle {
-            font-size: 1.3rem;
-            opacity: 0.8;
-            margin-bottom: 30px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin: 40px 0;
-            text-align: left;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.08);
-            padding: 25px;
-            border-radius: 15px;
-            border-left: 4px solid #3b82f6;
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            color: #3b82f6;
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-        }
-
-        .card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .card ul li {
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .card ul li::before {
-            content: "▸";
-            color: #3b82f6;
-            font-weight: bold;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 14px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            margin-top: 20px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background: #2563eb;
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
-        }
-
-        .footer {
-            margin-top: 40px;
-            opacity: 0.6;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2rem;
-            }
-
-            .grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .logo {
-                font-size: 3rem;
-            }
-
-            .container {
-                padding: 20px;
-            }
-        }
+        h1 { color: #f97316; }
+        a { color: #f97316; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">⚛️</div>
-        <h1>Física <span class="highlight">Interactiva</span></h1>
-        <p class="subtitle">Aprende Física de forma práctica y divertida</p>
+        <h1>📐 Movimiento Rectilíneo Uniforme (MRU)</h1>
+        <p>El MRU es un movimiento en línea recta con velocidad constante.</p>
 
-        <div class="grid">
-            <div class="card">
-                <h3>📐 Mecánica</h3>
-                <ul>
-                    <li>MRU - Movimiento Rectilíneo Uniforme</li>
-                    <li>MRUV - Movimiento Rectilíneo Uniformemente Variado</li>
-                    <li>Caída Libre</li>
-                    <li>Tiro Oblicuo</li>
-                </ul>
-            </div>
+        <h2>📝 Fórmula</h2>
+        <p>$$v = \frac{d}{t}$$</p>
+        <p>Donde:</p>
+        <ul>
+            <li><strong>v</strong> = velocidad (m/s)</li>
+            <li><strong>d</strong> = distancia (m)</li>
+            <li><strong>t</strong> = tiempo (s)</li>
+        </ul>
 
-            <div class="card">
-                <h3>⚖️ Dinámica</h3>
-                <ul>
-                    <li>Leyes de Newton</li>
-                    <li>Trabajo Mecánico</li>
-                    <li>Potencia</li>
-                    <li>Energía</li>
-                </ul>
-            </div>
-        </div>
+        <h2>📌 Ejemplo</h2>
+        <p>Un auto viaja a 60 km/h durante 2 horas. ¿Qué distancia recorre?</p>
+        <p><strong>Solución:</strong> d = v × t = 60 × 2 = 120 km</p>
 
-        <a href="#" class="btn">🚀 Empezar a aprender</a>
-
-        <div class="footer">
-            🔬 Ciencia para todos - 2024
-        </div>
+        <br>
+        <a href="/fisica-en-accion/">← Volver al inicio</a>
     </div>
 </body>
 </html>
